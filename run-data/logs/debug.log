@@ -272,7 +272,7 @@
 [05Jan2024 19:03:23.667] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
 [05Jan2024 19:03:23.686] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 6 threads for parallel mod-loading
 [05Jan2024 19:03:23.691] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3d19d85 - got cpw.mods.cl.ModuleClassLoader@332f25c8
-[05Jan2024 19:03:23.692] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.f1la.talesofskyrim.TalesOfSkyrimMod
+[05Jan2024 19:03:23.692] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.ombremoon.talesofskyrim.TalesOfSkyrimMod
 [05Jan2024 19:03:23.698] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3d19d85 - got cpw.mods.cl.ModuleClassLoader@332f25c8
 [05Jan2024 19:03:23.698] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
 [05Jan2024 19:03:23.700] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3d19d85 - got cpw.mods.cl.ModuleClassLoader@332f25c8
@@ -288,8 +288,8 @@
 [05Jan2024 19:03:23.742] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.43 Initialized
 [05Jan2024 19:03:23.788] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for talesofskyrim
 [05Jan2024 19:03:23.790] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[05Jan2024 19:03:23.792] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.f1la.talesofskyrim.datagen.DataGenerators to MOD
-[05Jan2024 19:03:23.797] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.f1la.talesofskyrim.TalesOfSkyrimMod$ClientModEvents to MOD
+[05Jan2024 19:03:23.792] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ombremoon.talesofskyrim.datagen.DataGenerators to MOD
+[05Jan2024 19:03:23.797] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ombremoon.talesofskyrim.TalesOfSkyrimMod$ClientModEvents to MOD
 [05Jan2024 19:03:23.812] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
 [05Jan2024 19:03:23.812] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17
 [05Jan2024 19:03:23.813] [modloading-worker-0/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
