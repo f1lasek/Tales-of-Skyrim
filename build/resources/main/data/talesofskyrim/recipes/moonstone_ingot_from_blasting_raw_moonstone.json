@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "moonstone",
+  "ingredient": {
+    "item": "talesofskyrim:raw_moonstone"
+  },
+  "result": "talesofskyrim:moonstone_ingot"
+}

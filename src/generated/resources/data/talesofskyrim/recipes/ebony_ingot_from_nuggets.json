@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    {
+      "item": "talesofskyrim:ebony_nugget"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:ebony_ingot"
+  }
+}

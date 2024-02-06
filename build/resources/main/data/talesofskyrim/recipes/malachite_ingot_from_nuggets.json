@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    },
+    {
+      "item": "talesofskyrim:malachite_nugget"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:malachite_ingot"
+  }
+}

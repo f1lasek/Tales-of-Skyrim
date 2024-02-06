@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "X": {
+      "item": "talesofskyrim:silver_ingot"
+    }
+  },
+  "pattern": [
+    " X#",
+    "X #",
+    " X#"
+  ],
+  "result": {
+    "item": "talesofskyrim:silver_bow"
+  },
+  "show_notification": true
+}

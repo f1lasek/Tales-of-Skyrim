@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    },
+    {
+      "item": "talesofskyrim:silver_ingot"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:silver_block"
+  }
+}

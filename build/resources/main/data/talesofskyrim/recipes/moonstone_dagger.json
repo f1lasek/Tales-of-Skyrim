@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "talesofskyrim:moonstone_nugget"
+    },
+    "X": {
+      "item": "talesofskyrim:moonstone_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "talesofskyrim:moonstone_dagger"
+  },
+  "show_notification": true
+}

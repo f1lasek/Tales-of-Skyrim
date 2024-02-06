@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    "X": {
+      "item": "talesofskyrim:dragon_bone"
+    }
+  },
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "talesofskyrim:dragon_sword"
+  },
+  "show_notification": true
+}

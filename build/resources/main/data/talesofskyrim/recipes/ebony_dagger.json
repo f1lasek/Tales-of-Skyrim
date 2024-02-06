@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "talesofskyrim:ebony_nugget"
+    },
+    "X": {
+      "item": "talesofskyrim:ebony_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "#"
+  ],
+  "result": {
+    "item": "talesofskyrim:ebony_dagger"
+  },
+  "show_notification": true
+}

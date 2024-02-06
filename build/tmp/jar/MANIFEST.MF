@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: talesofskyrim
+Specification-Vendor: steelfeathers, f1la
+Specification-Version: 1
+Implementation-Title: Tales-of-Skyrim
+Implementation-Version: 1.20.1-0.0.1.0
+Implementation-Vendor: steelfeathers, f1la
+Implementation-Timestamp: 2024-02-03T17:19:42+0100
+

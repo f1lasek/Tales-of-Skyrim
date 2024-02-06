@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "talesofskyrim:moonstone_nugget"
+    },
+    "X": {
+      "item": "talesofskyrim:malachite_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "talesofskyrim:malachite_pickaxe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    },
+    {
+      "item": "talesofskyrim:steel_nugget"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:steel_ingot"
+  }
+}

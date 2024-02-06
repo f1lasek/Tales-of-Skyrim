@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_garnet_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "talesofskyrim:garnet_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "talesofskyrim:garnet_from_smelting_garnet_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_garnet_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "talesofskyrim:garnet_from_smelting_garnet_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

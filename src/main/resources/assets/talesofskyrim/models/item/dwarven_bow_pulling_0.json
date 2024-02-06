@@ -1,0 +1,6 @@
+{
+    "parent": "talesofskyrim:item/dwarven_bow",
+    "textures": {
+        "layer0": "talesofskyrim:item/dwarven_bow_pulling_0"
+    }
+}

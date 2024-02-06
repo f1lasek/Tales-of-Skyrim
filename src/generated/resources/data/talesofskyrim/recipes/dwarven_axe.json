@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    "X": {
+      "item": "talesofskyrim:dwarven_ingot"
+    }
+  },
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "result": {
+    "item": "talesofskyrim:dwarven_axe"
+  },
+  "show_notification": true
+}

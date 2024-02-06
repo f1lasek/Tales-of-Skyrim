@@ -1,0 +1,6 @@
+{
+    "parent": "talesofskyrim:item/daedric_bow",
+    "textures": {
+        "layer0": "talesofskyrim:item/daedric_bow_pulling_2"
+    }
+}

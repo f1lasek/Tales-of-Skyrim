@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "talesofskyrim:orichalcum_nugget"
+    },
+    "X": {
+      "item": "talesofskyrim:orichalcum_ingot"
+    }
+  },
+  "pattern": [
+    "XX",
+    " #",
+    " #"
+  ],
+  "result": {
+    "item": "talesofskyrim:orichalcum_hoe"
+  },
+  "show_notification": true
+}

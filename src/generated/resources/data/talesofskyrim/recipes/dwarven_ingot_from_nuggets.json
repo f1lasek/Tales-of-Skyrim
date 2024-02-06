@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    },
+    {
+      "item": "talesofskyrim:dwarven_nugget"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:dwarven_ingot"
+  }
+}

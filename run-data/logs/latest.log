@@ -1,0 +1,30 @@
+[05Jan2024 19:03:16.548] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\filat\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.1.43, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, talesofskyrim, --all, --output, C:\Users\filat\Documents\GitHub\Tales-of-Skyrim\src\generated\resources, --existing, C:\Users\filat\Documents\GitHub\Tales-of-Skyrim\src\main\resources]
+[05Jan2024 19:03:16.553] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[05Jan2024 19:03:16.669] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[05Jan2024 19:03:16.729] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/filat/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[05Jan2024 19:03:17.032] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\filat\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.1.43\12e5cc2b50158bec903b4d511dfa0a0feb3209ab\javafmllanguage-1.20.1-47.1.43.jar is missing mods.toml file
+[05Jan2024 19:03:17.038] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\filat\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.1.43\e25689773289037192545f72e23dff4d5023fe62\lowcodelanguage-1.20.1-47.1.43.jar is missing mods.toml file
+[05Jan2024 19:03:17.044] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\filat\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.1.43\e6f54a896fcb804058c3c1713db61c205cb4b002\mclanguage-1.20.1-47.1.43.jar is missing mods.toml file
+[05Jan2024 19:03:17.049] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\filat\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.1.43\f3f16308ded6e5e44588520dcdb767607f4ccafa\fmlcore-1.20.1-47.1.43.jar is missing mods.toml file
+[05Jan2024 19:03:17.135] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[05Jan2024 19:03:18.611] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[05Jan2024 19:03:18.612] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\filat\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, talesofskyrim, --all, --output, C:\Users\filat\Documents\GitHub\Tales-of-Skyrim\src\generated\resources, --existing, C:\Users\filat\Documents\GitHub\Tales-of-Skyrim\src\main\resources]
+[05Jan2024 19:03:18.931] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\filat\Documents\GitHub\Tales-of-Skyrim\build\createSrgToMcp\output.srg
+[05Jan2024 19:03:19.256] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [talesofskyrim]
+[05Jan2024 19:03:23.739] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.1.43, for MC 1.20.1 with MCP 20230612.114412
+[05Jan2024 19:03:23.742] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.1.43 Initialized
+[05Jan2024 19:03:23.790] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[05Jan2024 19:03:24.352] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/filat/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.43_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.1.43_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[05Jan2024 19:03:24.352] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/filat/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.43_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.1.43_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[05Jan2024 19:03:24.512] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[05Jan2024 19:03:24.582] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 70 ms
+[05Jan2024 19:03:24.582] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: talesofskyrim
+[05Jan2024 19:03:24.791] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: talesofskyrim finished after 208 ms
+[05Jan2024 19:03:24.791] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: talesofskyrim
+[05Jan2024 19:03:24.983] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: talesofskyrim finished after 191 ms
+[05Jan2024 19:03:24.983] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: BLock Tags
+[05Jan2024 19:03:24.987] [main/INFO] [net.minecraft.data.DataGenerator/]: BLock Tags finished after 3 ms
+[05Jan2024 19:03:24.987] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[05Jan2024 19:03:25.004] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 17 ms
+[05Jan2024 19:03:25.004] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 492 ms
+[05Jan2024 19:03:25.044] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 569, old count: 747, new count: 570, removed stale: 0, written: 221

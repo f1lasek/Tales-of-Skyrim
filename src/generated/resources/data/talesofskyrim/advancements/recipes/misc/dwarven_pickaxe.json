@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dwarven_metal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "talesofskyrim:dwarven_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "talesofskyrim:dwarven_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dwarven_metal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "talesofskyrim:dwarven_pickaxe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "orichalcum",
+  "ingredient": {
+    "item": "talesofskyrim:raw_orichalcum"
+  },
+  "result": "talesofskyrim:orichalcum_ingot"
+}

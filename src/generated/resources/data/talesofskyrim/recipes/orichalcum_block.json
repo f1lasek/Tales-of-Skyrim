@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    },
+    {
+      "item": "talesofskyrim:orichalcum_ingot"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:orichalcum_block"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "talesofskyrim:item/silver_bow",
+    "textures": {
+        "layer0": "talesofskyrim:item/silver_bow_pulling_1"
+    }
+}

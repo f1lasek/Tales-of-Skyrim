@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "garnet",
+  "ingredient": {
+    "item": "talesofskyrim:deepslate_garnet_ore"
+  },
+  "result": "talesofskyrim:garnet"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    },
+    {
+      "item": "talesofskyrim:dwarven_ingot"
+    }
+  ],
+  "result": {
+    "item": "talesofskyrim:dwarven_block"
+  }
+}
