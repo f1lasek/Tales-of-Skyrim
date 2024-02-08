@@ -25,28 +25,28 @@ public class ModPlacedFeatures {
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SILVER_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+        register(context, SILVER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.OVERWORLD_SILVER_ORE_KEY),
+                OrePlacementInit.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context, CORUNDUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CORUNDUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+        register(context, CORUNDUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.OVERWORLD_CORUNDUM_ORE_KEY),
+                OrePlacementInit.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context, ORICHALCUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ORICHALCUM_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+        register(context, ORICHALCUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.OVERWORLD_ORICHALCUM_ORE_KEY),
+                OrePlacementInit.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context, MOONSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MOONSTONE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+        register(context, MOONSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.OVERWORLD_MOONSTONE_ORE_KEY),
+                OrePlacementInit.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context, MALACHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MALACHITE_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+        register(context, MALACHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.OVERWORLD_MALACHITE_ORE_KEY),
+                OrePlacementInit.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-        register(context, EBONY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_EBONY_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+        register(context, EBONY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ConfiguredFeaturesInit.OVERWORLD_EBONY_ORE_KEY),
+                OrePlacementInit.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
 

@@ -1,6 +1,7 @@
 package com.ombremoon.talesofskyrim.datagen;
 
 import com.ombremoon.talesofskyrim.Constants;
+import com.ombremoon.talesofskyrim.datagen.custom.ModWeaponAttributes;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -25,8 +26,10 @@ public class ModDataGen {
         generator.addProvider(includeServer, new ModRecipeProvider(packOutput));
         generator.addProvider(includeServer, new ModLootTableProvider(packOutput));
         generator.addProvider(includeServer, new ModSoundProvider(packOutput, existingFileHelper));
+        generator.addProvider(includeServer, new ModWeaponAttributes(packOutput, existingFileHelper));
         generator.addProvider(includeServer, new ModTagProvider.Blocks(packOutput, event.getLookupProvider(), existingFileHelper));
         generator.addProvider(includeServer, new ModTagProvider.Items(packOutput, event.getLookupProvider(), existingFileHelper));
+        generator.addProvider(includeServer, new ModGlobalLootModifiersProvider(packOutput));
         generator.addProvider(includeClient, new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(includeClient, new ModBlockStateProvider(packOutput, existingFileHelper));
         generator.addProvider(includeClient, new ModLangProvider(packOutput));

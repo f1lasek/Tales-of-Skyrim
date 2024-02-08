@@ -6,13 +6,17 @@ import com.ombremoon.talesofskyrim.common.init.block.BlockInit;
 import com.ombremoon.talesofskyrim.common.init.item.ItemInit;
 import com.ombremoon.talesofskyrim.Constants;
 import com.ombremoon.talesofskyrim.common.object.custom.spell.SpellType;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.LanguageProvider;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.apache.commons.lang3.StringUtils;
 
@@ -35,7 +39,7 @@ public class ModLangProvider extends LanguageProvider {
         ItemInit.ITEMS.getEntries().forEach(this::itemLang);
         BlockInit.BLOCKS.getEntries().forEach(this::blockLang);
         SpellInit.SPELL_TYPE.getEntries().forEach(this::spellLang);
-        add("itemGroup." + Constants.MOD_ID, Constants.MOD_NAME);
+        tabLang();
     }
 
     protected void itemLang(RegistryObject<Item> entry) {
@@ -54,6 +58,15 @@ public class ModLangProvider extends LanguageProvider {
 
     protected void spellLang(RegistryObject<SpellType<?>> entry) {
         add(entry.get().getSupplier().getDescriptionId(), checkReplace(entry));
+    }
+
+    protected void tabLang() {
+        add("itemGroup." + Constants.MOD_ID + ".tab", Constants.MOD_NAME);
+        add("itemGroup.blocks.tab" , Constants.MOD_NAME + " Blocks");
+        add("itemGroup.smithing.tab" , Constants.MOD_NAME + " Smithing");
+        add("itemGroup.potions_and_ingredients.tab" , Constants.ABBR_NAME + " Potions & Ingredients");
+        add("itemGroup.food.tab" , Constants.MOD_NAME + " Food");
+        add("itemGroup.magic.tab" , Constants.MOD_NAME + " Magic");
     }
 
     protected String checkReplace(RegistryObject<?> registryObject) {

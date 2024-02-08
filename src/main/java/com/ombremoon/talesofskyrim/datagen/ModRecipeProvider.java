@@ -4,6 +4,7 @@ import com.ombremoon.talesofskyrim.CommonClass;
 import com.ombremoon.talesofskyrim.Constants;
 import com.ombremoon.talesofskyrim.common.init.block.BlockInit;
 import com.ombremoon.talesofskyrim.common.init.item.ItemInit;
+import com.ombremoon.talesofskyrim.common.init.item.EquipmentInit;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
@@ -36,7 +37,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -45,7 +46,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -54,7 +55,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -63,7 +64,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -72,7 +73,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -81,7 +82,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.SILVER_INGOT.get())
@@ -89,7 +90,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -98,7 +99,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.SILVER_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.SILVER_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -152,7 +153,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_silver", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.SILVER_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -161,7 +162,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -170,7 +171,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -179,7 +180,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -188,7 +189,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -197,7 +198,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.STEEL_INGOT.get())
@@ -205,7 +206,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -214,7 +215,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -223,14 +224,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.STEEL_INGOT.get())
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -238,7 +239,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -246,7 +247,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.STEEL_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.STEEL_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.STEEL_INGOT.get())
@@ -268,7 +269,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_steel", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.STEEL_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -277,7 +278,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -286,7 +287,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -295,7 +296,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -304,7 +305,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -313,7 +314,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.MOONSTONE_INGOT.get())
@@ -321,7 +322,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -330,7 +331,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -339,14 +340,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.MOONSTONE_INGOT.get())
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -354,7 +355,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -362,7 +363,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MOONSTONE_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MOONSTONE_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.MOONSTONE_INGOT.get())
@@ -384,7 +385,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_moonstone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MOONSTONE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -393,7 +394,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -402,7 +403,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -411,7 +412,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -420,7 +421,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -429,7 +430,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.DWARVEN_INGOT.get())
@@ -437,7 +438,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -446,7 +447,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -455,14 +456,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.DWARVEN_INGOT.get())
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -470,7 +471,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -478,7 +479,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DWARVEN_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DWARVEN_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.DWARVEN_INGOT.get())
@@ -500,7 +501,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dwarven_metal", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DWARVEN_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -509,7 +510,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -518,7 +519,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -527,7 +528,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -536,7 +537,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -545,7 +546,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.ORICHALCUM_INGOT.get())
@@ -553,7 +554,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -562,7 +563,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -571,14 +572,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.ORICHALCUM_INGOT.get())
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -586,7 +587,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -594,7 +595,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.ORICHALCUM_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.ORICHALCUM_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.ORICHALCUM_INGOT.get())
@@ -616,7 +617,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orichalcum", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.ORICHALCUM_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -625,7 +626,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -634,7 +635,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -643,7 +644,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -652,7 +653,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -661,7 +662,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.MALACHITE_INGOT.get())
@@ -669,7 +670,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -678,7 +679,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -687,14 +688,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.MALACHITE_INGOT.get())
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -702,7 +703,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -710,7 +711,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.MALACHITE_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.MALACHITE_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.MALACHITE_INGOT.get())
@@ -732,7 +733,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_malachite", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.MALACHITE_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -741,7 +742,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -750,7 +751,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -759,7 +760,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -768,7 +769,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -777,7 +778,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.EBONY_INGOT.get())
@@ -785,7 +786,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -794,7 +795,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -803,14 +804,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.EBONY_INGOT.get())
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -818,7 +819,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -826,7 +827,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.EBONY_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.EBONY_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.EBONY_INGOT.get())
@@ -848,7 +849,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_ebony", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.EBONY_INGOT.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_PICKAXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_PICKAXE.get())
                 .pattern("XXX")
                 .pattern(" # ")
                 .pattern(" # ")
@@ -857,7 +858,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_AXE.get())
                 .pattern("XX")
                 .pattern("X#")
                 .pattern(" #")
@@ -866,7 +867,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_SHOVEL.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_SHOVEL.get())
                 .pattern("X")
                 .pattern("#")
                 .pattern("#")
@@ -875,7 +876,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_HOE.get())
                 .pattern("XX")
                 .pattern(" #")
                 .pattern(" #")
@@ -884,7 +885,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_SWORD.get())
                 .pattern("X")
                 .pattern("X")
                 .pattern("#")
@@ -893,7 +894,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_DAGGER.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_DAGGER.get())
                 .pattern("X")
                 .pattern("#")
                 .define('X', ItemInit.DRAGON_BONE.get())
@@ -901,7 +902,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_MACE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_MACE.get())
                 .pattern(" X ")
                 .pattern(" #X")
                 .pattern("#  ")
@@ -910,7 +911,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_BOW.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_BOW.get())
                 .pattern(" X#")
                 .pattern("X #")
                 .pattern(" X#")
@@ -919,14 +920,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_bone", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_HELMET.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_HELMET.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .define('X', ItemInit.DRAGON_SCALES.get())
                 .unlockedBy("has_dragon_scales", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_CHESTPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_CHESTPLATE.get())
                 .pattern("X X")
                 .pattern("XXX")
                 .pattern("XXX")
@@ -934,7 +935,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_scales", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_LEGGINGS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_LEGGINGS.get())
                 .pattern("XXX")
                 .pattern("X X")
                 .pattern("X X")
@@ -942,7 +943,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_dragon_scales", inventoryTrigger(ItemPredicate.Builder.item().of(ItemInit.DRAGON_BONE.get()).build()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ItemInit.DRAGON_BOOTS.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, EquipmentInit.DRAGON_BOOTS.get())
                 .pattern("X X")
                 .pattern("X X")
                 .define('X', ItemInit.DRAGON_SCALES.get())

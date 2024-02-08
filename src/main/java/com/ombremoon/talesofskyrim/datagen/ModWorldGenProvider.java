@@ -1,8 +1,8 @@
 package com.ombremoon.talesofskyrim.datagen;
 
 import com.ombremoon.talesofskyrim.Constants;
-import com.ombremoon.talesofskyrim.common.init.worldgen.ModBiomeModifiers;
-import com.ombremoon.talesofskyrim.common.init.worldgen.ModConfiguredFeatures;
+import com.ombremoon.talesofskyrim.common.init.worldgen.BiomeModifiersInit;
+import com.ombremoon.talesofskyrim.common.init.worldgen.ConfiguredFeaturesInit;
 import com.ombremoon.talesofskyrim.common.init.worldgen.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
@@ -16,9 +16,9 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
-            .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
+            .add(Registries.CONFIGURED_FEATURE, ConfiguredFeaturesInit::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, BiomeModifiersInit::bootstrap);
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(Constants.MOD_ID));

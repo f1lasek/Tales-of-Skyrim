@@ -2,8 +2,11 @@ package com.ombremoon.talesofskyrim.common.init.block;
 
 import com.ombremoon.talesofskyrim.common.init.item.ItemInit;
 import com.ombremoon.talesofskyrim.Constants;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
@@ -13,11 +16,13 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Supplier;
 
 public class BlockInit {
-    public static final DeferredRegister<Block> BLOCKS =
-            DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
+    public static final List<RegistryObject<? extends Block>> BLOCK_LIST = new ArrayList<>();
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);
 
     /*ORES & BLOCK VARIANTS*/
     public static final RegistryObject<Block> AMETHYST_BLOCK = registerBlock("amethyst_block",
@@ -74,6 +79,7 @@ public class BlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
                     .requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
 
+    public static final RegistryObject<CreativeModeTab> BLOCKS_TAB = registerCreativeModeTab("blocks", BlockInit.DWARVEN_BLOCK, BlockInit.BLOCK_LIST);
 
     private static RegistryObject<Block> registerOreBlock(String name, Block blockToCopy, float blockStrength, float explosionResistance) {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.copy(blockToCopy).requiresCorrectToolForDrops().strength(blockStrength, explosionResistance)));
@@ -81,12 +87,24 @@ public class BlockInit {
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         var toReturn = BLOCKS.register(name, block);
+        BLOCK_LIST.add(toReturn);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ItemInit.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    protected static RegistryObject<CreativeModeTab> registerCreativeModeTab(String name, RegistryObject<Block> block, List<RegistryObject<? extends Block>> registryObjects) {
+        return ItemInit.CREATIVE_MODE_TABS.register(name, () -> CreativeModeTab.builder()
+                .icon(() -> new ItemStack(block.get()))
+                .title(Component.translatable("itemGroup." + name + ".tab"))
+                .displayItems(
+                        (itemDisplayParameters, output) -> {
+                            registryObjects.forEach((registryObject) -> output.accept(new ItemStack(registryObject.get())));
+                        })
+                .build());
     }
 
     public static void register(IEventBus eventBus) {

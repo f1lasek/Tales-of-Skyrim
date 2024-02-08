@@ -4,11 +4,12 @@ import com.ombremoon.talesofskyrim.common.object.custom.perk.AbstractPerk;
 import com.ombremoon.talesofskyrim.common.object.custom.spell.AbstractSpell;
 import com.ombremoon.talesofskyrim.common.object.custom.spell.SpellInstance;
 import com.ombremoon.talesofskyrim.common.object.custom.spell.SpellType;
-import com.ombremoon.talesofskyrim.util.ArchetypeUtil;
+import com.ombremoon.talesofskyrim.util.CapabilityUtil;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.player.Player;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
@@ -164,11 +165,11 @@ public class SkyrimCapabilityHandler implements ISkyrimCapability {
         tag.putInt(NBT_MANA_KEY, this.currentMana);
         tag.putBoolean(NBT_COMBAT_KEY, this.inCombatMode);
         for (SpellType<?> grimoireAbility : spellSet) {
-            listTag.add(ArchetypeUtil.storeSpell(grimoireAbility, NBT_SPELLS_KEY));
+            listTag.add(CapabilityUtil.storeSpell(grimoireAbility, NBT_SPELLS_KEY));
         }
         tag.put(NBT_SPELLS_KEY, listTag);
         if (this.rightHandSpell != null) {
-            ArchetypeUtil.storeSpell(tag, this.rightHandSpell, NBT_RIGHT_KEY);
+            CapabilityUtil.storeSpell(tag, this.rightHandSpell, NBT_RIGHT_KEY);
         }
         return tag;
     }
@@ -181,8 +182,8 @@ public class SkyrimCapabilityHandler implements ISkyrimCapability {
 
         for (int i = 0; i < listTag.size(); i++) {
             CompoundTag compoundTag = listTag.getCompound(i);
-            this.spellSet.add(ArchetypeUtil.getSpellByName(ArchetypeUtil.getSpellId(compoundTag, NBT_SPELLS_KEY)));
+            this.spellSet.add(CapabilityUtil.getSpellByName(CapabilityUtil.getSpellId(compoundTag, NBT_SPELLS_KEY)));
         }
-        this.rightHandSpell = ArchetypeUtil.getSpellByName(ArchetypeUtil.getSpellId(nbt, NBT_RIGHT_KEY));
+        this.rightHandSpell = CapabilityUtil.getSpellByName(CapabilityUtil.getSpellId(nbt, NBT_RIGHT_KEY));
     }
 }

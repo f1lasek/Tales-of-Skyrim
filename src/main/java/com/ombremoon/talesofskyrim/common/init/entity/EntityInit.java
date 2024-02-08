@@ -12,7 +12,7 @@ public class EntityInit {
     public static void initEntityRegisters() {
 //        ModProjectiles.init();
 //        ModMiscEntities.init();
-        ModMobs.init();
+        MobInit.init();
     }
 
     public static void register( IEventBus eventBus) {

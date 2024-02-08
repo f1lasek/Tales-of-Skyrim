@@ -3,12 +3,12 @@ package com.ombremoon.talesofskyrim.event;
 import com.ombremoon.talesofskyrim.Constants;
 import com.ombremoon.talesofskyrim.capability.SkyrimCapabilityProvider;
 import com.ombremoon.talesofskyrim.common.object.custom.spell.AbstractSpell;
-import com.ombremoon.talesofskyrim.common.object.custom.spell.SpellInstance;
-import com.ombremoon.talesofskyrim.util.ArchetypeUtil;
+import com.ombremoon.talesofskyrim.util.CapabilityUtil;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.living.LivingUseTotemEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -40,12 +40,12 @@ public class CommonModEvents {
     @SubscribeEvent
     public static void onAbilityTick(TickEvent.PlayerTickEvent event) {
         Player player = event.player;
-        Iterator<AbstractSpell> iterator = ArchetypeUtil.getActiveSpells(player).keySet().iterator();
+        Iterator<AbstractSpell> iterator = CapabilityUtil.getActiveSpells(player).keySet().iterator();
 
         try {
             while (iterator.hasNext()) {
                 var grimoireSpell = iterator.next();
-                var grimoireSpellInstance = ArchetypeUtil.getActiveSpells(player).get(grimoireSpell);
+                var grimoireSpellInstance = CapabilityUtil.getActiveSpells(player).get(grimoireSpell);
                 if (!grimoireSpellInstance.tickSpellEffect(player, () -> {
                     grimoireSpell.onSpellUpdate(grimoireSpellInstance, true, player);
                 })) {
